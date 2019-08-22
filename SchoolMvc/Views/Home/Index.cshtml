@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@model IEnumerable<SchoolMvc.Models.Student>
+
+<h2>All Students</h2>
+<hr />
+<ol>
+    @foreach (var student in Model)
+    {
+        <li>
+            <ul>
+                <li>First Name: @Html.DisplayFor(modelItem => student.FirstName)</li>
+                <li>Last Name: @Html.DisplayFor(modelItem => student.LastName)</li>
+            </ul>
+        </li>
+    }
+</ol>

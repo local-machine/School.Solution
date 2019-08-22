@@ -1,0 +1,14 @@
+/Users/Guest/Desktop/School.Solution/SchoolApi/obj/Debug/netcoreapp2.2/SchoolApi.csprojAssemblyReference.cache
+/Users/Guest/Desktop/School.Solution/SchoolApi/obj/Debug/netcoreapp2.2/SchoolApi.csproj.CoreCompileInputs.cache
+/Users/Guest/Desktop/School.Solution/SchoolApi/obj/Debug/netcoreapp2.2/SchoolApi.RazorAssemblyInfo.cache
+/Users/Guest/Desktop/School.Solution/SchoolApi/obj/Debug/netcoreapp2.2/SchoolApi.RazorAssemblyInfo.cs
+/Users/Guest/Desktop/School.Solution/SchoolApi/obj/Debug/netcoreapp2.2/SchoolApi.AssemblyInfoInputs.cache
+/Users/Guest/Desktop/School.Solution/SchoolApi/obj/Debug/netcoreapp2.2/SchoolApi.AssemblyInfo.cs
+/Users/Guest/Desktop/School.Solution/SchoolApi/bin/Debug/netcoreapp2.2/SchoolApi.deps.json
+/Users/Guest/Desktop/School.Solution/SchoolApi/bin/Debug/netcoreapp2.2/SchoolApi.runtimeconfig.json
+/Users/Guest/Desktop/School.Solution/SchoolApi/bin/Debug/netcoreapp2.2/SchoolApi.runtimeconfig.dev.json
+/Users/Guest/Desktop/School.Solution/SchoolApi/bin/Debug/netcoreapp2.2/SchoolApi.dll
+/Users/Guest/Desktop/School.Solution/SchoolApi/bin/Debug/netcoreapp2.2/SchoolApi.pdb
+/Users/Guest/Desktop/School.Solution/SchoolApi/obj/Debug/netcoreapp2.2/SchoolApi.RazorTargetAssemblyInfo.cache
+/Users/Guest/Desktop/School.Solution/SchoolApi/obj/Debug/netcoreapp2.2/SchoolApi.dll
+/Users/Guest/Desktop/School.Solution/SchoolApi/obj/Debug/netcoreapp2.2/SchoolApi.pdb
