@@ -1,0 +1,9 @@
+@model SchoolMvc.Models.Course
+
+@{
+    ViewData["Title"] = "Course";
+}
+
+
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<p>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</p>

@@ -1,0 +1,11 @@
+@model SchoolMvc.Models.Student
+
+@{
+    ViewData["Title"] = "Student";
+}
+
+
+<h3>Name: @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</h3>
+
+
+<button class="btnbtn-outline-success">@Html.ActionLink("Edit", "Edit", new { id = Model.StudentId})</button>

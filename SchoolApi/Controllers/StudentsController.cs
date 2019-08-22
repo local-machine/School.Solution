@@ -20,6 +20,14 @@ namespace School.Controllers
             return _db.Students.ToList();
         }
 
+                // GET api/students/5
+        [HttpGet("{id}")]
+        public ActionResult<Student> GetThisStudent(int id)
+        {
+            var thisStudent = _db.Students.FirstOrDefault(x => x.StudentId == id);
+            return thisStudent;
+        } 
+
         // POST api/values
         [HttpPost]
         public void Post ([FromBody] Student student)

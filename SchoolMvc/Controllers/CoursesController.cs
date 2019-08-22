@@ -11,17 +11,30 @@ namespace SchoolMvc.Controllers
             return View(allCourses);
         }
 
-        public ActionResult Create()
+public ActionResult Create()
         {
             return View();
         }
 
-        // [HttpPost]
-        // public IActionResult Create(CoursesController course)
-        // {
-        //     Course.PostCourse(course);
-        //     return RedirectToAction("Index");
-        // }
+        [HttpPost]
+        public IActionResult Create(Course course)
+        {
+            Course.CreateCourse(course);
+            return RedirectToAction("Index");
+        }
+
+
+        public ActionResult Edit()
+        {
+            return View();
+        }
+
+        [HttpPut]
+        public IActionResult Edit(int id)
+        {
+            
+            return RedirectToAction("Index");
+        }
 
         public IActionResult Details(int id)
         {

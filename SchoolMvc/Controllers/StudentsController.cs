@@ -16,12 +16,26 @@ namespace SchoolMvc.Controllers
             return View();
         }
 
-        // [HttpPost]
-        // public IActionResult Create(StudentsController student)
-        // {
-        //     StudentsController.PostStudent(student);
-        //     return RedirectToAction("Index");
-        // }
+        [HttpPost]
+        public IActionResult Create(Student student)
+        {
+            Student.CreateStudent(student);
+            return RedirectToAction("Index");
+        }
+
+
+        public ActionResult Edit(int id)
+        {
+            var thisStudent = Student.GetThisStudent(id);
+            return View(thisStudent);
+        }
+
+        [HttpPut]
+        public IActionResult Edit(Student student, int id)
+        {
+            Student.EditStudent(student, id);
+            return RedirectToAction("Index");
+        }
 
         public IActionResult Details(int id)
         {

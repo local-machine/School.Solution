@@ -30,6 +30,24 @@ namespace SchoolApi.Migrations
                     b.ToTable("courses");
                 });
 
+            modelBuilder.Entity("School.Models.CourseStudent", b =>
+                {
+                    b.Property<int>("CourseStudentId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("CourseId");
+
+                    b.Property<int>("StudentId");
+
+                    b.HasKey("CourseStudentId");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("CourseStudent");
+                });
+
             modelBuilder.Entity("School.Models.Student", b =>
                 {
                     b.Property<int>("StudentId")
@@ -42,6 +60,19 @@ namespace SchoolApi.Migrations
                     b.HasKey("StudentId");
 
                     b.ToTable("students");
+                });
+
+            modelBuilder.Entity("School.Models.CourseStudent", b =>
+                {
+                    b.HasOne("School.Models.Course", "Course")
+                        .WithMany("Students")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("School.Models.Student", "Student")
+                        .WithMany("Courses")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

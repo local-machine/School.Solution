@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Create Student";
+}
+
+@model SchoolMvc.Models.Student
+
+    @using (Html.BeginForm())
+    {
+
+        @Html.LabelFor(model => model.FirstName)<br>
+            <input data-val="true"  required id="FirstName" name="FirstName" type="text" value=""><hr>
+
+         @Html.LabelFor(model => model.LastName)<br>
+            <input data-val="true"  required id="LastName" name="LastName" type="text" value=""><hr>
+        <input type="submit" value="Add New Student" class="btn btn-outline-success"/>
+        
+    }

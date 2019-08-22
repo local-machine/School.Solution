@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Courses Page";
+}
+
+
+@model IEnumerable<SchoolMvc.Models.Course>
+
+<h2>All Courses</h2>
+<hr />
+<ol>
+    @foreach (var course in Model)
+    {
+        <li>
+            <ul>
+                <p class="alert alert-info">@Html.ActionLink($"{course.Name + " | " + course.Description}", "Details", new { id = course.CourseId})</p class="alert alert-info">
+            </ul>
+        </li>
+    }
+</ol>
+
+<button class="btn btn-outline-success"><a href="/Courses/Create">Create Course</a></button>

@@ -11,7 +11,9 @@ namespace School.Models
         public int CourseId { get; set; }
 
         public string Name { get; set; }
-        
+
         public string Description { get; set; }
+
+        public ICollection<CourseStudent> Students { get; }
     }
 }

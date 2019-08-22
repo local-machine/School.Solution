@@ -20,6 +20,14 @@ namespace School.Controllers
             return _db.Courses.ToList();
         }
 
+        // GET api/courses/5
+        [HttpGet("{id}")]
+        public ActionResult<Course> GetThisCourse(int id)
+        {
+            var thisCourse = _db.Courses.FirstOrDefault(x => x.CourseId == id);
+            return thisCourse;
+        } 
+
         // POST api/values
         [HttpPost]
         public void Post ([FromBody] Course course)

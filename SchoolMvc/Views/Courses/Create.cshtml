@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Create Course";
+}
+
+@model SchoolMvc.Models.Course
+
+    @using (Html.BeginForm())
+    {
+
+        @Html.LabelFor(model => model.Name)<br>
+            <input data-val="true"  required id="Name" name="Name" type="text" value=""><hr>
+
+         @Html.LabelFor(model => model.Description)<br>
+            <input data-val="true"  required id="Description" name="Description" type="text" value=""><hr>
+        <input type="submit" value="Add New Course" class="btn btn-outline-success"/>
+        
+    }
